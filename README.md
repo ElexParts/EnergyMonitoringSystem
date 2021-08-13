@@ -1,4 +1,4 @@
 Energy Monitoring System
 ========================
 
-Monitor power consumption in your home.
+Monitor energy consumption in your home.
