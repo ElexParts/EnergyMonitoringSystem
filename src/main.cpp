@@ -9,7 +9,7 @@
 #include "EmonLib.h"
 
 // Define constants.
-#define DEBUG 1       // Enable or disable debugging
+#define DEBUG 0 // Enable or disable debugging
 
 // Configure Energy Monitor.
 EnergyMonitor emon1;
@@ -72,13 +72,18 @@ void loop() {
   }
 
   // Display energy consumption.
-  lcd.clear();
   lcd.setCursor(0, 0);
-  lcd.print("Voltage(V): ");
-  lcd.setCursor(0, 1);
-  lcd.print("Current(I): ");
-  lcd.setCursor(12, 0);
+  lcd.print("V:");
+  lcd.setCursor(2, 0);
   lcd.print(Vrms);
-  lcd.setCursor(12, 1);
+
+  lcd.setCursor(8, 0);
+  lcd.print("I:");
+  lcd.setCursor(10, 0);
   lcd.print(Irms);
+
+  lcd.setCursor(0, 1);
+  lcd.print("P:");
+  lcd.setCursor(2, 1);
+  lcd.print(P);
 }
