@@ -14,10 +14,10 @@
 // Configure Energy Monitor.
 EnergyMonitor emon1;
 
-double Vrms         = 16.0; // Input voltage.
-double Ical         = 60.6; // Current calibration.
-int Nsamples        = 1480; // Number of calibration samples.
-int EnergySensorPin = 1;    // Arduino input pin.
+double Vrms         = 220.0;  // Input voltage.
+double Ical         = 60.6;   // Current calibration.
+int Nsamples        = 1480;   // Number of calibration samples.
+int EnergySensorPin = 1;      // Arduino input pin.
 
 double Irms = 0.0;  // Current reading.
 double P    = 0.0;  // Calculated power.
